@@ -1,7 +1,7 @@
 ---
 title: Privacy Policy
 ---
-**Last updated: August 31, 2026**
+**Last updated: September 1, 2026**
 
 This Privacy Policy describes how CityScan ("CityScan," "we," "us," or "our") collects, uses, and shares information when you use our mobile application (the "App").
 
@@ -33,21 +33,36 @@ Location is only accessed while the App is in use. The App does not request or u
 
 ### Information You Voluntarily Submit
 
-If you use the App's feedback, "Add It!", or "Help fill this in" features, we collect what you provide — the text you write, any photograph, the address, and your device's coordinates at the time of submission.
+If you use the App's feedback, "Add It!", or "Help fill this in" features, we collect what you provide — the text you write, any photograph, the address, and your device's coordinates at the time of submission. Your installation ID, described below, is sent along with it.
 
 We do not collect your device model, operating system version, or App version with these submissions.
 
 ### Information Stored On Your Device
 
-The App stores the following locally on your device: your collection of found buildings and their photos, your favourites, your achievements and discovery streak, your scan and Peek usage counts, your display preferences, and cached building information and imagery.
+The App stores the following locally on your device: your collection of found buildings and their photos, your favourites, your achievements and discovery streak, your scan and Peek usage counts, your display preferences, cached building information and imagery, and the installation ID described in the next section.
 
-This information stays on your device. We cannot read it, and it is not transmitted to us except where you explicitly submit it as described above.
+Apart from the installation ID, which is sent with submissions as described below, this information stays on your device. We cannot read it, and it is not transmitted to us except where you explicitly submit it.
+
+### Installation ID
+
+The first time you open the App, it generates an **installation ID** — a random string of characters, in the standard UUID format — and saves it on your device.
+
+**What it is.** It is randomly generated and nothing more. It is not your device's serial number, advertising identifier, or any other identifier issued by your phone or by Apple, and it is not derived or calculated from anything about your device. It contains no personal information: not your name, not your email address, not your location, and nothing that describes you or your phone. On its own it identifies nobody — it is a number that means nothing except "these submissions arrived from the same copy of the App."
+
+**What we use it for.** Only two things:
+
+- **Rate limiting.** It is sent with submissions so we can cap how many any one installation can send in an hour. This is what stops a single source from flooding our review queue, and it lets us apply that limit without collecting anything about who you are.
+- **Answering you about something you sent.** If you report a bug or send feedback, the ID lets us connect your message to the submission it refers to, and lets us find your submissions again if you ask us to.
+
+**What we do not use it for.** We do not use it to track you across other apps or websites, to build a profile of you, to target advertising, or to link your activity to any identity. It is not shared with advertisers or data brokers, and it is not part of the shared building research described below.
+
+**How to clear it.** The ID lives only in the App's own storage on your device. Deleting the App deletes it. If you reinstall, the App generates a brand-new, unrelated ID, and we have no way to connect the new one to the old one. Two installations on the same phone receive different IDs.
 
 ### Information We Do Not Collect
 
 The App does not require an account. We do not collect your name, email address, or phone number unless you choose to include it in a message you send us.
 
-**The App does not create or store a device identifier, advertising identifier, or any other persistent identifier for you.** Submissions we receive are not linked to a device, an installation, or to each other. We have no way to tell which submissions came from the same person.
+**The App does not use an advertising identifier, and does not collect any identifier issued by your device or its operating system.** The only identifier it holds is the randomly generated installation ID described above.
 
 We do not use analytics, crash-reporting, or advertising software, and we do not track you across other apps or websites.
 
@@ -76,6 +91,7 @@ We use the information described above to:
 - Keep your collection, achievements, and preferences on your device
 - Serve previously generated building research to other users, as described above
 - Review submitted buildings and corrections in order to improve the App's database
+- Limit how many submissions a single installation can send in an hour, to prevent abuse
 - Diagnose problems you report and improve the App
 - Comply with applicable law
 
@@ -106,7 +122,7 @@ Requests to these services necessarily reveal your device's IP address to them, 
 ## Data Retention
 
 - Photos sent for building identification are processed and are not retained by us.
-- Photos, notes, and coordinates you submit through "Add It!", "Help fill this in", or feedback are retained indefinitely so we can review them and improve the App.
+- Photos, notes, and coordinates you submit through "Add It!", "Help fill this in", or feedback are retained indefinitely so we can review them and improve the App. The installation ID attached to a submission is retained for as long as that submission is.
 - Shared building research is retained indefinitely, as it describes buildings rather than people.
 - Information stored on your device remains until you delete it in the App or delete the App itself.
 
@@ -118,7 +134,9 @@ Requests to these services necessarily reveal your device's IP address to them, 
 
 **Your collection.** You can remove individual buildings from your collection in the App, which deletes the saved photo for that building from your device. Deleting the App removes everything it has stored locally.
 
-**Submitted content.** If you submitted a photo, note, or feedback message and want it removed, contact us at the address below with enough detail to identify it — roughly when you sent it, and the building or subject — and we will delete it. Because submissions carry no identifier, we cannot look them up by device, so this detail is necessary.
+**Submitted content.** If you submitted a photo, note, or feedback message and want it removed, contact us at the address below and we will delete it. Because submissions now carry your installation ID, we can identify the submissions sent from a given installation on request, and can retrieve or delete them as a group. Telling us roughly when you sent it and what building or subject it concerned still helps us find a single item quickly.
+
+Note that this works only for submissions sent from an installation you still have. If you have since deleted and reinstalled the App, its ID is gone and cannot be recovered, so we can no longer connect you to those earlier submissions by ID — describe them instead and we will find them that way.
 
 Depending on where you live, you may have additional rights regarding your personal information, including rights of access, correction, and deletion. Contact us at the address below to exercise them. Note that for most of what the App does we hold no information that identifies you, so in many cases there will be nothing to retrieve.
 
